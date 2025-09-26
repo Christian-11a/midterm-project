@@ -1,0 +1,230 @@
+[
+  {
+    "id": 1,
+    "name": "The Study Nook",
+    "location": "Quezon City",
+    "price": 300,
+    "rate_unit": "per 4-hour session",
+    "main_image": "/assets/space-1.jpg",
+    "images": ["/assets/space1_a.jpg", "/assets/space1_b.jpg"],
+    "description": "A quiet and cozy space perfect for deep focus sessions. Equipped with soundproof pods and an extensive library for a productive day.",
+    "amenities": [
+      "High-speed Wi-Fi",
+      "Free Coffee & Tea",
+      "Power Outlets at every seat",
+      "Air-conditioned",
+      "Printing Services"
+    ],
+    "hours": "9:00 AM - 9:00 PM",
+    "time_slots": ["9am - 1pm", "1pm - 5pm", "5pm - 9pm"]
+  },
+  {
+    "id": 2,
+    "name": "WorkHaven Makati",
+    "location": "Makati City",
+    "price": 500,
+    "rate_unit": "per day",
+    "main_image": "/assets/space-2.jpg",
+    "images": ["/assets/space2_a.jpg", "/assets/space2_b.jpg"],
+    "description": "A professional co-working environment in the heart of the business district. Ideal for meetings, collaborations, and networking.",
+    "amenities": [
+      "Fiber Internet",
+      "Meeting Rooms",
+      "Gourmet Pantry",
+      "24/7 Access",
+      "Ergonomic Chairs"
+    ],
+    "hours": "Open 24/7",
+    "time_slots": ["Full Day Pass", "Night Owl Pass (9pm-6am)"]
+  },
+  {
+    "id": 3,
+    "name": "Cebu Creative Hub",
+    "location": "Cebu City",
+    "price": 250,
+    "rate_unit": "per session",
+    "main_image": "/assets/space-3.jpg",
+    "images": ["/assets/space-3.jpg", "/assets/space-3.jpg"],
+    "description": "A vibrant and artistic space designed to foster creativity and collaboration among Cebu's digital nomads and artists.",
+    "amenities": [
+      "Community Events",
+      "Art Supplies",
+      "Fast Wi-Fi",
+      "Pet-friendly",
+      "Outdoor Garden"
+    ],
+    "hours": "10:00 AM - 7:00 PM",
+    "time_slots": ["Morning Session (10am-2pm)", "Afternoon Session (2pm-6pm)"]
+  },
+  {
+    "id": 4,
+    "name": "The Baguio Grind",
+    "location": "Baguio City",
+    "price": 350,
+    "rate_unit": "per 4-hour session",
+    "main_image": "/assets/space-4.webp",
+    "images": ["/assets/space4_a.webp", "/assets/space4_b.webp"],
+    "description": "Escape the heat and get productive in the cool mountain air. Our space offers a serene environment with stunning views and rustic charm.",
+    "amenities": [
+      "Heated Rooms",
+      "Fireplace",
+      "High-speed Wi-Fi",
+      "Locker Rentals",
+      "Free Hot Cocoa"
+    ],
+    "hours": "8:00 AM - 10:00 PM",
+    "time_slots": ["Morning (8am-12pm)", "Afternoon (1pm-5pm)", "Evening (6pm-10pm)"]
+  },
+  {
+    "id": 5,
+    "name": "Davao Zen Zone",
+    "location": "Davao City",
+    "price": 280,
+    "rate_unit": "per session",
+    "main_image": "/assets/space-5.png",
+    "images": ["/assets/space5_a.png", "/assets/space5_b.png"],
+    "description": "A minimalist and calming space with a focus on tranquility. Perfect for those who need to block out distractions and find their flow.",
+    "amenities": [
+      "Noise-cancelling Pods",
+      "Aromatherapy",
+      "Complimentary Water",
+      "High-speed Internet",
+      "Meditation Room"
+    ],
+    "hours": "9:00 AM - 8:00 PM",
+    "time_slots": ["4-Hour Pass", "Day Pass"]
+  },
+  {
+    "id": 6,
+    "name": "Bonifacio Global Study",
+    "location": "Taguig City",
+    "price": 600,
+    "rate_unit": "per 6-hour session",
+    "main_image": "/assets/space-6.jpg",
+    "images": ["/assets/space6_a.jpg", "/assets/space6_b.jpg"],
+    "description": "Located in the heart of BGC, this premium study space offers a luxurious and tech-forward environment for serious academics and professionals.",
+    "amenities": [
+      "Ultra-Fast Wi-Fi",
+      "Private Booths",
+      "Full-service Cafe",
+      "Standing Desks",
+      "Projector Room"
+    ],
+    "hours": "8:00 AM - 12:00 AM",
+    "time_slots": ["Morning (8am-2pm)", "Afternoon (2pm-8pm)", "Evening (8pm-12am)"]
+  },
+  {
+    "id": 7,
+    "name": "Tagaytay Vista",
+    "location": "Tagaytay City",
+    "price": 450,
+    "rate_unit": "per day",
+    "main_image": "/assets/space-7.jpg",
+    "images": ["/assets/space7_a.jpg", "/assets/space7_b.jpg"],
+    "description": "Work with a view of Taal Lake. This study spot combines a peaceful, scenic environment with all the tools you need for a productive day.",
+    "amenities": [
+      "Balcony Seating",
+      "Coffee Shop",
+      "High-speed Internet",
+      "Outdoor Patio",
+      "Parking"
+    ],
+    "hours": "9:00 AM - 6:00 PM",
+    "time_slots": ["Full Day Pass"]
+  },
+  {
+    "id": 8,
+    "name": "Ortigas Think Tank",
+    "location": "Pasig City",
+    "price": 400,
+    "rate_unit": "per 6-hour session",
+    "main_image": "/assets/space-8.jpg",
+    "images": ["/assets/space8_a.jpg", "/assets/space8_b.jpg"],
+    "description": "A collaborative space designed for brainstorming and group projects. Multiple whiteboards and shared tables make it easy to work together.",
+    "amenities": [
+      "Whiteboard Walls",
+      "Projector",
+      "Meeting Rooms",
+      "Hot Desks",
+      "Snack Bar"
+    ],
+    "hours": "8:00 AM - 10:00 PM",
+    "time_slots": ["Morning (8am-2pm)", "Afternoon (2pm-8pm)"]
+  },
+  {
+    "id": 9,
+    "name": "Greenhills Study Hub",
+    "location": "San Juan City",
+    "price": 320,
+    "rate_unit": "per 4-hour session",
+    "main_image": "/assets/space-9.jpeg",
+    "images": ["/assets/space9_a.jpeg", "/assets/space9_b.jpeg"],
+    "description": "A convenient and well-equipped space for students and professionals in the San Juan area. A classic, reliable place to get work done.",
+    "amenities": [
+      "High-speed Wi-Fi",
+      "24/7 Access",
+      "Comfortable Seating",
+      "Locker Rentals",
+      "Beverage Station"
+    ],
+    "hours": "24/7",
+    "time_slots": ["4-Hour Pass", "Overnight Pass (10pm-6am)"]
+  },
+  {
+    "id": 10,
+    "name": "Laguna Learning Lab",
+    "location": "Santa Rosa, Laguna",
+    "price": 280,
+    "rate_unit": "per session",
+    "main_image": "/assets/space-10.jpg",
+    "images": ["/assets/space10_a.jpg", "/assets/space10_b.jpg"],
+    "description": "A modern and spacious study center catering to the academic community in Laguna. Features a quiet floor and a collaborative zone.",
+    "amenities": [
+      "Fast Wi-Fi",
+      "Individual Desks",
+      "Quiet Zones",
+      "Charging Stations",
+      "Snack Bar"
+    ],
+    "hours": "9:00 AM - 9:00 PM",
+    "time_slots": ["Morning (9am-2pm)", "Afternoon (2pm-7pm)", "Full Day"]
+  },
+  {
+    "id": 11,
+    "name": "Alabang Study Sphere",
+    "location": "Muntinlupa City",
+    "price": 450,
+    "rate_unit": "per day",
+    "main_image": "/assets/space-11.jpg",
+    "images": ["/assets/space11_a.jpg", "/assets/space11_b.jpg"],
+    "description": "An exclusive and polished study lounge offering a refined atmosphere and premium amenities for a top-tier work experience.",
+    "amenities": [
+      "High-speed Internet",
+      "Ergonomic Chairs",
+      "Private Booths",
+      "Free Gourmet Coffee",
+      "Printing Services"
+    ],
+    "hours": "8:00 AM - 11:00 PM",
+    "time_slots": ["Hourly Rate", "Day Pass"]
+  },
+  {
+    "id": 12,
+    "name": "Pampanga Productivity Hub",
+    "location": "San Fernando, Pampanga",
+    "price": 270,
+    "rate_unit": "per session",
+    "main_image": "/assets/space-12.jpg",
+    "images": ["/assets/space12_a.jpg", "/assets/space12_b.jpg"],
+    "description": "A welcoming and efficient space in Central Luzon. Designed for both quick work sessions and long-term projects with all the essentials you need.",
+    "amenities": [
+      "High-speed Wi-Fi",
+      "Free Refreshments",
+      "Quiet Zones",
+      "Community Lounge",
+      "On-site Cafe"
+    ],
+    "hours": "9:00 AM - 8:00 PM",
+    "time_slots": ["3-Hour Pass", "Full Day Pass"]
+  }
+]
