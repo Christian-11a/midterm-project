@@ -1,13 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import spaces from '../data/spaces.json';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext'; 
 import { useForm } from 'react-hook-form';
 import { v4 as uuidv4 } from 'uuid';
 import ConfirmationModal from '../components/ConfirmationModal';
 
 export default function SpaceDetail() {
-  const { user, addBooking, login } = useAuth();
+  const { user, addBooking, login, bookings } = useAuth(); 
   const navigate = useNavigate();
   const { spaceId } = useParams();
   const space = useMemo(() => spaces.find(s => String(s.id) === String(spaceId)), [spaceId]);
@@ -27,14 +27,30 @@ export default function SpaceDetail() {
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
+  
   const onFormSubmit = (data) => {
+    const { date, timeslot } = data;
+    const currentUserName = user.name; 
+
+    const isDuplicate = bookings.some(booking =>
+        booking.spaceId === space.id &&      
+        booking.date === date &&              
+        booking.timeslot === timeslot &&       
+        booking.userName === currentUserName    
+    );
+
+    if (isDuplicate) {
+        setSuccess(null); 
+        alert(`Booking failed! You (${currentUserName}) already have a reservation at ${space.name} on ${date} at ${timeslot}.`);
+        return; 
+    }
+
     setPendingBooking(data);
     setIsModalOpen(true);
   };
 
   const handleAutoLoginAndBook = () => {
     login({ name: 'Guest' });
-
   };
 
   const handleBookingAttempt = () => {
@@ -47,7 +63,7 @@ export default function SpaceDetail() {
   };
 
   const handleConfirmBooking = () => {
-    if (!pendingBooking || !user) return; // safety check
+    if (!pendingBooking || !user) return; 
 
     const booking = {
       id: uuidv4(),

@@ -9,9 +9,9 @@ import useLocalStorage from '../hooks/useLocalStorage';
 export default function Home() {
   const [query, setQuery] = useState('');
   const [sortOrder, setSortOrder] = useLocalStorage('studyspot_sort_order', 'name-asc'); 
+  
   const filtered = useMemo(() => {
     let currentSpaces = [...spaces]; 
-    // Apply filtering
     const q = query.trim().toLowerCase();
     if (q) {
       currentSpaces = currentSpaces.filter(s => 
@@ -49,7 +49,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-6">
         
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-left">Find Spaces</h2>
+          <h2 id="find-spaces" className="text-2xl font-bold text-left scroll-mt-20">Find Spaces</h2>
           
           <SortControls 
             currentSort={sortOrder} 
