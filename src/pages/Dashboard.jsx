@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import ConfirmationModal from '../components/ConfirmationModal';
-import SortControls from '../components/SortControls'; // 🔑 Import SortControls
-import useLocalStorage from '../hooks/useLocalStorage'; // 🔑 Import useLocalStorage
+import SortControls from '../components/SortControls'; 
+import useLocalStorage from '../hooks/useLocalStorage'; 
 import { FiCalendar, FiClock, FiDollarSign, FiTrash2, FiMapPin, FiFlag, FiUser } from 'react-icons/fi';
 
 export default function Dashboard() {
@@ -79,6 +79,7 @@ export default function Dashboard() {
         <SortControls 
           currentSort={sortOrder} 
           onSortChange={setSortOrder} 
+             pageContext="dashboard" 
         />
       </div>
       

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollonTop from './components/ScrollonTop'; 
 import Header from './components/Header';
 import Home from './pages/Home';
 import SpaceDetail from './pages/SpaceDetail';
@@ -13,6 +14,8 @@ export default function App() {
   return (
     <AuthProvider>
       <Router>
+        <ScrollonTop /> 
+        
         <div className="min-h-screen bg-gray-50">
           <Header />
           <Routes>

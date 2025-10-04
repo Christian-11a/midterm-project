@@ -18,7 +18,6 @@ export default function Home() {
         s.name.toLowerCase().includes(q) || s.location.toLowerCase().includes(q)
       );
     }
-    // Sorting logic based on sortOrder
     switch (sortOrder) {
       case 'name-asc':
         currentSpaces.sort((a, b) => a.name.localeCompare(b.name));
@@ -33,7 +32,6 @@ export default function Home() {
         currentSpaces.sort((a, b) => b.price - a.price);
         break;
       default:
-        // No sorting
         break;
     }
 
@@ -54,6 +52,7 @@ export default function Home() {
           <SortControls 
             currentSort={sortOrder} 
             onSortChange={setSortOrder} 
+             pageContext="home" // 🔑 Pass home context
           />
         </div>
         
